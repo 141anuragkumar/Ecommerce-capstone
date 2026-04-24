@@ -10,7 +10,7 @@ const signup = async (req, res) => {
     // Check karo user pehle se hai kya
     const userExists = await User.findOne({ email })
     if (userExists) {
-      return res.status(400).json({ message: 'Email already registered!' })
+      return res.status(400).json({ message: 'Email already registered' })
     }
 
     // Password encrypt karo
@@ -43,13 +43,13 @@ const login = async (req, res) => {
     // User dhundo
     const user = await User.findOne({ email })
     if (!user) {
-      return res.status(400).json({ message: 'Email not found!' })
+      return res.status(400).json({ message: 'Email not found' })
     }
 
     // Password check karo
     const isMatch = await bcrypt.compare(password, user.password)
     if (!isMatch) {
-      return res.status(400).json({ message: 'Wrong password!' })
+      return res.status(400).json({ message: 'Wrong password' })
     }
     // authController.js mein profile function
     const getProfile = async (req, res) => {
