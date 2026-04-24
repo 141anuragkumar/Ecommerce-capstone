@@ -1,0 +1,25 @@
+=== MERN Ecommerce Project ===
+
+---BACKEND FEATURES---
+
+-Express Server with MongoDB connection
+-User Authentication — Signup + Login with bcrypt password hashing
+-JWT Token — 7 days expiry, protected routes
+-User Profile route — /api/auth/profile
+-Full Product CRUD — Create, Read, Update, Delete
+-Auth Middleware — Protected routes (create/update/delete product ke liye login zaroori)
+-CORS enabled — Frontend se connect ho sakta hai
+
+
+
+---FRONTEND FEATURES---
+
+-Dark/Light Mode toggle
+-Product Listing with grid layout
+-Search — product name se filter
+-Category Filter — buttons se filter
+-Add to Cart — localStorage mein save
+-Cart Page — quantity update, remove, subtotal, total
+-Login/Signup pages
+-Navbar — login state ke hisaab se change hota hai (Hi, Name! + Logout)
+-React Router — 4 pages
